@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#081721">
+  <meta name="description" content="Tras las huellas del mundo griego: viaje histórico y visual por Grecia y el Egeo.">
+  <title>Tras las huellas del mundo griego</title>
+  <style>
+    :root{--ink:#17232b;--deep:#081721;--sea:#174d67;--aegean:#2e7999;--gold:#c89a49;--marble:#f3efe5;--paper:#fbfaf6;--muted:#64717a;--line:rgba(23,35,43,.15)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.72}
+    a{color:inherit}.hero{min-height:100svh;display:grid;align-items:end;position:relative;overflow:hidden;background:radial-gradient(circle at 77% 18%,rgba(200,154,73,.32),transparent 23%),linear-gradient(150deg,#07131c 0%,#0c2938 55%,#174d67 100%);color:white}
+    .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,10,15,.88),rgba(3,10,15,.05) 68%),repeating-linear-gradient(90deg,transparent 0 11.8%,rgba(255,255,255,.025) 12%);pointer-events:none}
+    .hero:after{content:'ΑΘΗΝΑΙ';position:absolute;right:-.03em;top:.04em;font:700 clamp(5rem,25vw,22rem)/.8 Arial,sans-serif;letter-spacing:-.08em;color:rgba(255,255,255,.035)}
+    .hero-inner{position:relative;z-index:2;max-width:1100px;padding:clamp(2rem,7vw,7rem);padding-bottom:clamp(4rem,11vw,9rem)}
+    .eyebrow{font:600 .73rem/1.2 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#dfbd7b;margin-bottom:1.2rem}.hero h1{margin:0;max-width:920px;font-size:clamp(3.2rem,10vw,8.7rem);line-height:.9;font-weight:500;letter-spacing:-.055em}.hero h1 em{display:block;font-weight:400;color:#dfbd7b}.subtitle{max-width:660px;margin:2rem 0 0;font-size:clamp(1.05rem,2.1vw,1.42rem);color:rgba(255,255,255,.8)}
+    nav{position:sticky;top:0;z-index:20;background:rgba(8,23,33,.94);backdrop-filter:blur(16px);overflow:auto;white-space:nowrap;border-bottom:1px solid rgba(255,255,255,.1)}nav div{max-width:1150px;margin:auto;padding:.82rem 1.2rem;display:flex;gap:1.45rem}nav a{font:600 .72rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;color:rgba(255,255,255,.75)}nav a:hover{color:#dfbd7b}
+    main{overflow:hidden}.section{max-width:1080px;margin:auto;padding:clamp(4.5rem,10vw,9rem) clamp(1.3rem,5vw,4rem)}.kicker{font:700 .72rem/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}h2{font-size:clamp(2.5rem,6vw,5.7rem);line-height:.98;letter-spacing:-.04em;margin:.75rem 0 2rem;font-weight:500}h3{font-size:clamp(1.55rem,3vw,2.5rem);line-height:1.1;margin:0 0 1rem}.lead{font-size:clamp(1.22rem,2.4vw,1.7rem);line-height:1.55;max-width:850px}.dropcap:first-letter{float:left;font-size:5.2rem;line-height:.72;padding:.17em .1em 0 0;color:var(--gold)}
+    .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,6rem);align-items:start}.aside{border-left:2px solid var(--gold);padding-left:1.5rem;color:var(--muted)}.aside strong{color:var(--ink)}
+    .dark{background:var(--deep);color:white}.dark .section{max-width:1160px}.dark p{color:rgba(255,255,255,.73)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:3.5rem}.card{background:var(--deep);padding:2.1rem}.card b{font:700 .72rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#dfbd7b}.card h3{margin-top:1rem;font-size:1.55rem}.card p{font-size:.97rem}
+    .quote{margin:4rem auto;max-width:900px;padding:clamp(2rem,6vw,5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;font-size:clamp(1.55rem,3.5vw,3rem);line-height:1.28;font-style:italic}.quote cite{display:block;margin-top:1.3rem;font:600 .7rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-style:normal}
+    .timeline{margin-top:3rem;border-left:1px solid var(--gold);padding-left:2rem}.event{position:relative;padding:0 0 2.7rem}.event:before{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-2.34rem;top:.55rem}.date{font:700 .74rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}.event h3{margin:.55rem 0 .4rem;font-size:1.45rem}.event p{margin:0;color:var(--muted)}
+    .route{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}.stop{min-height:180px;padding:1.45rem;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;background:white}.stop span{font:700 .68rem/1 Arial,sans-serif;color:var(--gold);letter-spacing:.14em}.stop h3{font-size:1.45rem;margin:.7rem 0}.stop p{font-size:.91rem;color:var(--muted);margin:0}
+    footer{background:#050d12;color:rgba(255,255,255,.58);padding:3.5rem 1.4rem;text-align:center;font:500 .75rem/1.7 Arial,sans-serif;letter-spacing:.06em}.status{display:inline-block;border:1px solid rgba(255,255,255,.18);padding:.55rem .8rem;margin-top:1rem;color:#dfbd7b;text-transform:uppercase;font-size:.67rem;letter-spacing:.12em}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.route{grid-template-columns:1fr 1fr}.hero-inner{padding-left:1.25rem;padding-right:1.25rem}.section{padding-left:1.25rem;padding-right:1.25rem}}
+    @media(max-width:430px){.route{grid-template-columns:1fr}.hero h1{font-size:3.55rem}}
+    @media print{nav{display:none}.hero{min-height:75vh}.section{break-inside:avoid}.dark{background:white;color:black}.dark p{color:#444}.card{background:white;color:black;border:1px solid #ddd}}
+  </style>
+</head>
+<body>
+<header class="hero" id="inicio">
+  <div class="hero-inner">
+    <div class="eyebrow">Cuaderno de viaje · Grecia 2026</div>
+    <h1>Tras las huellas <em>del mundo griego</em></h1>
+    <p class="subtitle">Un viaje por la cuna de Occidente, contado desde el paisaje real: ciudades, santuarios, islas, mitos y ruinas que todavía explican quiénes somos.</p>
+  </div>
+</header>
+<nav aria-label="Navegación principal"><div><a href="#prologo">Prólogo</a><a href="#atenas">Atenas</a><a href="#acropolis">Acrópolis</a><a href="#cronologia">Cronología</a><a href="#itinerario">Itinerario</a></div></nav>
+<main>
+  <section class="section" id="prologo">
+    <div class="kicker">Prólogo · 18 de julio de 2026</div>
+    <h2>Atenas aparece antes de comprenderla</h2>
+    <div class="grid">
+      <div>
+        <p class="lead dropcap">La primera mirada parte del Candia Hotel. Desde aquí Atenas no se presenta como una postal ordenada, sino como una inmensa superposición de épocas: una ciudad contemporánea extendida hasta las montañas, coronada por los dos grandes hitos que organizan su horizonte, la Acrópolis y el Licabeto.</p>
+        <p>La distancia no reduce la fuerza de la Acrópolis; la vuelve más inteligible. Se comprende entonces que nunca fue solamente un conjunto de templos. Fue una afirmación visible de identidad, poder cívico y protección divina. Elevada sobre la roca, dominaba la ciudad antigua del mismo modo que hoy sigue dominando, simbólicamente, la metrópoli moderna.</p>
+      </div>
+      <aside class="aside"><strong>Una lectura del paisaje.</strong><br>La Atenas actual se extiende sobre la cuenca del Ática. Entre el tejido urbano emergen colinas que funcionaron como referencias defensivas, religiosas y visuales. La ciudad se entiende mejor observando esas elevaciones que siguiendo sus avenidas.</aside>
+    </div>
+    <blockquote class="quote">Viajar por Grecia consiste en descubrir que el pasado no está detrás del paisaje: está dentro de él.<cite>Nota editorial del viaje</cite></blockquote>
+  </section>
+
+  <section class="dark" id="atenas"><div class="section">
+    <div class="kicker">Capítulo I</div><h2>Atenas, ciudad de capas</h2>
+    <p class="lead">La capital griega reúne en un mismo espacio la polis clásica, la ciudad romana, la capital bizantina y otomana, el proyecto nacional del siglo XIX y una metrópoli mediterránea de más de tres millones de habitantes.</p>
+    <div class="cards">
+      <article class="card"><b>La cuenca</b><h3>Geografía antes que monumento</h3><p>Atenas creció en una llanura rodeada por el Himeto, el Pentélico, el Parnés y el Egaleo. Sus colinas interiores ofrecieron defensa, santuarios y puntos de orientación.</p></article>
+      <article class="card"><b>La polis</b><h3>Una comunidad política</h3><p>La Atenas antigua no fue solo un lugar. Fue una forma de organización cívica donde ciudadanía, religión, guerra, teatro y debate público formaban parte de un mismo sistema.</p></article>
+      <article class="card"><b>La memoria</b><h3>Un símbolo universal</h3><p>La ciudad clásica se convirtió en referencia de democracia, filosofía, historia, arquitectura y tragedia, aunque su realidad social fuese mucho más compleja que el mito posterior.</p></article>
+    </div>
+  </div></section>
+
+  <section class="section" id="acropolis">
+    <div class="kicker">El horizonte desde el hotel</div><h2>La Acrópolis: poder convertido en piedra</h2>
+    <div class="grid">
+      <div><p class="lead">La palabra <em>akrópolis</em> significa, literalmente, “ciudad alta”. La roca ateniense estuvo ocupada desde tiempos prehistóricos, pero su imagen decisiva nació en el siglo V a. C., cuando Pericles impulsó un programa monumental tras las guerras médicas.</p><p>El Partenón, los Propileos, el templo de Atenea Niké y el Erecteion no son edificios aislados. Constituyen una escenografía religiosa y política. Atenea protege a la ciudad; la ciudad honra a Atenea; y la piedra proclama ante aliados y rivales la capacidad material y cultural de Atenas.</p></div>
+      <aside class="aside"><strong>Conviene no idealizar.</strong><br>El esplendor monumental fue financiado en parte mediante los recursos de la Liga de Delos, transformada progresivamente en un instrumento de hegemonía ateniense. Democracia interna e imperialismo exterior convivieron en la misma polis.</aside>
+    </div>
+  </section>
+
+  <section class="section" id="cronologia">
+    <div class="kicker">Cronología esencial</div><h2>De fortaleza micénica a emblema mundial</h2>
+    <div class="timeline">
+      <div class="event"><div class="date">Edad del Bronce</div><h3>La roca fortificada</h3><p>La Acrópolis fue una posición defensiva y palacial mucho antes de la Atenas democrática.</p></div>
+      <div class="event"><div class="date">480 a. C.</div><h3>Destrucción persa</h3><p>Las tropas de Jerjes ocuparon Atenas y destruyeron los antiguos santuarios de la Acrópolis.</p></div>
+      <div class="event"><div class="date">447–432 a. C.</div><h3>Construcción del Partenón</h3><p>Ictino y Calícrates dirigieron el templo; Fidias supervisó el programa escultórico y la gran imagen de Atenea.</p></div>
+      <div class="event"><div class="date">Siglos V–XVII</div><h3>Templo, iglesia y mezquita</h3><p>Los edificios fueron transformándose con cada civilización que controló Atenas.</p></div>
+      <div class="event"><div class="date">1687</div><h3>La explosión</h3><p>Un proyectil veneciano alcanzó el polvorín otomano instalado en el Partenón y provocó la gran destrucción de su estructura.</p></div>
+      <div class="event"><div class="date">Desde 1975</div><h3>Restauración científica</h3><p>Un programa de larga duración desmonta, estudia y recompone elementos con criterios arqueológicos contemporáneos.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="itinerario">
+    <div class="kicker">Arquitectura de la obra</div><h2>El viaje que iremos construyendo</h2>
+    <p class="lead">Cada etapa incorporará fotografías propias, contexto histórico, mapas, cronologías, personajes, arquitectura, mitología y una lectura crítica de lo observado.</p>
+    <div class="route">
+      <article class="stop"><span>01</span><div><h3>Atenas</h3><p>La polis, la Acrópolis, el Ágora y sus museos.</p></div></article>
+      <article class="stop"><span>02</span><div><h3>Mykonos</h3><p>El Egeo, las Cícladas y la proximidad de Delos.</p></div></article>
+      <article class="stop"><span>03</span><div><h3>Éfeso</h3><p>Una gran ciudad jónica, helenística y romana.</p></div></article>
+      <article class="stop"><span>04</span><div><h3>Patmos</h3><p>Paisaje insular, cristianismo y Apocalipsis.</p></div></article>
+      <article class="stop"><span>05</span><div><h3>Rodas</h3><p>Helenismo, rutas marítimas y caballeros.</p></div></article>
+      <article class="stop"><span>06</span><div><h3>Creta</h3><p>La civilización minoica y el palacio de Cnosos.</p></div></article>
+      <article class="stop"><span>07</span><div><h3>Santorini</h3><p>Volcán, Akrotiri y transformación del Egeo.</p></div></article>
+      <article class="stop"><span>∞</span><div><h3>Memoria</h3><p>El regreso: relacionar lugares, relatos y fotografías.</p></div></article>
+    </div>
+  </section>
+</main>
+<footer>TRAS LAS HUELLAS DEL MUNDO GRIEGO · GRECIA 2026<br><span class="status">Edición viva · primera publicación</span></footer>
+</body>
+</html>
