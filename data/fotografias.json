@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "actualizado": "2026-07-18",
+  "colecciones": [
+    {
+      "id": "atenas-candia-nocturna",
+      "titulo": "Atenas nocturna desde el Candia Hotel",
+      "localizacion": "Candia Hotel, Atenas",
+      "fecha": "2026-07-18",
+      "estado_archivos": "pendiente_subida_binaria",
+      "fotografias": [
+        {
+          "id": "atenas-acropolis-noche-01",
+          "archivo": "images/atenas/atenas-acropolis-noche-01.jpg",
+          "titulo": "La Acrópolis iluminada sobre la ciudad",
+          "orientacion": "horizontal",
+          "descripcion": "Vista nocturna de la Acrópolis y el Partenón desde la azotea del Candia Hotel, con el tejido urbano de Atenas en primer plano.",
+          "uso_editorial": ["portada_capitulo_atenas", "galeria_atenas", "seccion_acropolis"]
+        },
+        {
+          "id": "atenas-licabeto-noche-01",
+          "archivo": "images/atenas/atenas-licabeto-noche-01.jpg",
+          "titulo": "El monte Licabeto en la noche ateniense",
+          "orientacion": "vertical",
+          "descripcion": "Panorámica nocturna hacia el monte Licabeto, elevado sobre la trama urbana de Atenas.",
+          "uso_editorial": ["galeria_atenas", "seccion_geografia"]
+        },
+        {
+          "id": "atenas-acropolis-noche-02",
+          "archivo": "images/atenas/atenas-acropolis-noche-02.jpg",
+          "titulo": "Acrópolis y horizonte urbano",
+          "orientacion": "horizontal",
+          "descripcion": "Vista amplia de la Acrópolis iluminada y los tejados de Atenas desde el Candia Hotel.",
+          "uso_editorial": ["galeria_atenas", "seccion_paisaje"]
+        }
+      ]
+    }
+  ]
+}
