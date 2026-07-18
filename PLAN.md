@@ -4,7 +4,7 @@
 
 **Versión documental vigente:** 0.3  
 **Avance global estimado:** 24 %  
-**Estado:** infraestructura documental completada; guía de compras definida como micrositio independiente; recursos multimedia y primer capítulo editorial pendientes.
+**Estado:** infraestructura documental completada; guía de compras integrada en el proyecto; recursos multimedia y primer capítulo editorial pendientes.
 
 ## Bloques de trabajo
 
@@ -14,7 +14,7 @@
 | B02 | Configurar GitHub Pages | Cerrado | 100 % |
 | B03 | Definir estructura del libro | Cerrado | 100 % |
 | B04 | Estructurar itinerario | Cerrado | 100 % |
-| B05 | Guía de compras de Grecia | En curso | 35 % |
+| B05 | Integrar la guía de compras | En curso | 35 % |
 | B06 | Crear catálogo inicial de fotografías | Cerrado | 100 % |
 | B07 | Incorporar recursos multimedia | En curso | 30 % |
 | B08 | Desarrollar capítulo Atenas | Pendiente | 0 % |
@@ -39,15 +39,15 @@ Criterio conseguido:
 
 > El proyecto puede retomarse desde un hilo nuevo mediante la lectura de sus documentos rectores, sin depender del historial completo de conversaciones.
 
-## Línea independiente: guía de compras
+## Bloque integrado: guía de compras
 
-### B05 — Guía de compras de Grecia
+### B05 — Integración de la guía de compras
 
-**Objetivo:** convertir la guía de compras original en un micrositio web independiente, enlazado desde el proyecto principal pero separado editorialmente de los capítulos históricos y del diario del viaje.
+**Objetivo:** incorporar la guía de compras como una sección estable del proyecto *Tras las huellas del mundo griego*, con identidad propia dentro del sitio, pero integrada en su navegación, estructura editorial, estilo visual y sistema de versiones.
 
 #### Alcance funcional
 
-- Página de entrada propia.
+- Acceso desde la portada y la navegación general.
 - Secciones por destino: Atenas, Mykonos, Éfeso, Patmos, Rodas, Creta y Santorini.
 - Recuperación de todas las fotografías e ilustraciones del PDF original.
 - Optimización de imágenes para web y organización en `images/compras/`.
@@ -55,8 +55,8 @@ Criterio conseguido:
 - Galería ampliable.
 - Checklist de compras.
 - Enlace de descarga al PDF original.
-- Acceso visible desde la portada y la navegación general.
 - Diseño adaptable a móvil y escritorio con la hoja de estilo común.
+- Enlaces cruzados con los capítulos de cada destino cuando existan.
 
 #### Entradas conocidas
 
@@ -74,6 +74,7 @@ Criterio conseguido:
 - [ ] Incorporar fichas, precios, advertencias y checklist.
 - [ ] Añadir la descarga del PDF original.
 - [ ] Enlazar la guía desde la portada y el menú general.
+- [ ] Crear enlaces cruzados con Atenas, Mykonos, Éfeso, Patmos, Rodas, Creta y Santorini.
 - [ ] Verificar visualización en móvil y escritorio.
 - [ ] Comprobar la publicación en GitHub Pages.
 
@@ -83,7 +84,8 @@ Criterio conseguido:
 - La navegación por destinos funciona.
 - Las imágenes tienen texto alternativo y pie coherente.
 - El PDF original puede descargarse.
-- La guía está enlazada desde el proyecto principal sin confundirse con un capítulo del libro.
+- La guía forma parte de la arquitectura del proyecto y comparte navegación y estilo.
+- Existen enlaces cruzados con los capítulos de destino disponibles.
 - La versión publicada funciona correctamente en GitHub Pages.
 
 ## Bloque actual
@@ -98,7 +100,7 @@ Criterio conseguido:
   - Acrópolis iluminada;
   - panorama con el Licabeto;
   - segunda vista nocturna de la Acrópolis.
-- PDF `Guia_compras_Grecia_6_paginas(1).pdf` como fuente de la línea independiente B05.
+- PDF `Guia_compras_Grecia_6_paginas(1).pdf` como fuente del bloque integrado B05.
 - Metadatos estructurados existentes en `data/`.
 
 #### Pendiente
@@ -140,7 +142,7 @@ Contenido previsto:
 - mapas;
 - curiosidades;
 - bibliografía;
-- enlaces cruzados.
+- enlaces cruzados con la guía de compras.
 
 ## Riesgos y dependencias
 
