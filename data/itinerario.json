@@ -1,0 +1,17 @@
+{
+  "titulo": "Tras las huellas del mundo griego",
+  "duracion": "8 días / 7 noches",
+  "inicio": "Atenas",
+  "tipo": "Atenas y crucero por el Egeo",
+  "etapas": [
+    {"orden": 1, "destino": "Atenas", "pais": "Grecia", "capitulo": "atenas/"},
+    {"orden": 2, "destino": "Mykonos", "pais": "Grecia", "capitulo": "mykonos/"},
+    {"orden": 3, "destino": "Kusadasi / Éfeso", "pais": "Turquía", "capitulo": "efeso/"},
+    {"orden": 4, "destino": "Patmos", "pais": "Grecia", "capitulo": "patmos/"},
+    {"orden": 5, "destino": "Rodas", "pais": "Grecia", "capitulo": "rodas/"},
+    {"orden": 6, "destino": "Heraklion / Creta", "pais": "Grecia", "capitulo": "creta/"},
+    {"orden": 7, "destino": "Santorini", "pais": "Grecia", "capitulo": "santorini/"},
+    {"orden": 8, "destino": "Atenas", "pais": "Grecia", "capitulo": "atenas/"}
+  ],
+  "fuente": "Guía de compras para tu viaje por Grecia, páginas 1-6"
+}
