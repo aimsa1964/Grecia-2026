@@ -20,9 +20,10 @@
     .dark{background:var(--deep);color:white}.dark .section{max-width:1160px}.dark p{color:rgba(255,255,255,.73)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.14);margin-top:3.5rem}.card{background:var(--deep);padding:2.1rem}.card b{font:700 .72rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#dfbd7b}.card h3{margin-top:1rem;font-size:1.55rem}.card p{font-size:.97rem}
     .quote{margin:4rem auto;max-width:900px;padding:clamp(2rem,6vw,5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;font-size:clamp(1.55rem,3.5vw,3rem);line-height:1.28;font-style:italic}.quote cite{display:block;margin-top:1.3rem;font:600 .7rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-style:normal}
     .timeline{margin-top:3rem;border-left:1px solid var(--gold);padding-left:2rem}.event{position:relative;padding:0 0 2.7rem}.event:before{content:'';position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);left:-2.34rem;top:.55rem}.date{font:700 .74rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}.event h3{margin:.55rem 0 .4rem;font-size:1.45rem}.event p{margin:0;color:var(--muted)}
-    .route{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}.stop{min-height:180px;padding:1.45rem;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;background:white}.stop span{font:700 .68rem/1 Arial,sans-serif;color:var(--gold);letter-spacing:.14em}.stop h3{font-size:1.45rem;margin:.7rem 0}.stop p{font-size:.91rem;color:var(--muted);margin:0}
+    .route{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}.stop{min-height:180px;padding:1.45rem;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;background:white}.stop span{font:700 .68rem/1 Arial,sans-serif;color:var(--gold);letter-spacing:.14em}.stop h3{font-size:1.45rem;margin:.7rem 0}.stop p{font-size:.91rem;color:var(--muted);margin:0}.stop a{display:inline-block;margin-top:1rem;color:var(--sea);font:700 .7rem/1 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;text-decoration:none}
+    .shopping{background:var(--marble)}.shopping-box{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:2.2rem 0}.button{display:inline-block;padding:.9rem 1.15rem;background:var(--deep);color:white;text-decoration:none;font:700 .72rem/1 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
     footer{background:#050d12;color:rgba(255,255,255,.58);padding:3.5rem 1.4rem;text-align:center;font:500 .75rem/1.7 Arial,sans-serif;letter-spacing:.06em}.status{display:inline-block;border:1px solid rgba(255,255,255,.18);padding:.55rem .8rem;margin-top:1rem;color:#dfbd7b;text-transform:uppercase;font-size:.67rem;letter-spacing:.12em}
-    @media(max-width:760px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.route{grid-template-columns:1fr 1fr}.hero-inner{padding-left:1.25rem;padding-right:1.25rem}.section{padding-left:1.25rem;padding-right:1.25rem}}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.route{grid-template-columns:1fr 1fr}.shopping-box{grid-template-columns:1fr}.hero-inner{padding-left:1.25rem;padding-right:1.25rem}.section{padding-left:1.25rem;padding-right:1.25rem}}
     @media(max-width:430px){.route{grid-template-columns:1fr}.hero h1{font-size:3.55rem}}
     @media print{nav{display:none}.hero{min-height:75vh}.section{break-inside:avoid}.dark{background:white;color:black}.dark p{color:#444}.card{background:white;color:black;border:1px solid #ddd}}
   </style>
@@ -35,7 +36,7 @@
     <p class="subtitle">Un viaje por la cuna de Occidente, contado desde el paisaje real: ciudades, santuarios, islas, mitos y ruinas que todavía explican quiénes somos.</p>
   </div>
 </header>
-<nav aria-label="Navegación principal"><div><a href="#prologo">Prólogo</a><a href="#atenas">Atenas</a><a href="#acropolis">Acrópolis</a><a href="#cronologia">Cronología</a><a href="#itinerario">Itinerario</a></div></nav>
+<nav aria-label="Navegación principal"><div><a href="#prologo">Prólogo</a><a href="#atenas">Atenas</a><a href="#acropolis">Acrópolis</a><a href="#cronologia">Cronología</a><a href="#itinerario">Itinerario</a><a href="#compras">Compras</a></div></nav>
 <main>
   <section class="section" id="prologo">
     <div class="kicker">Prólogo · 18 de julio de 2026</div>
@@ -56,7 +57,7 @@
     <div class="cards">
       <article class="card"><b>La cuenca</b><h3>Geografía antes que monumento</h3><p>Atenas creció en una llanura rodeada por el Himeto, el Pentélico, el Parnés y el Egaleo. Sus colinas interiores ofrecieron defensa, santuarios y puntos de orientación.</p></article>
       <article class="card"><b>La polis</b><h3>Una comunidad política</h3><p>La Atenas antigua no fue solo un lugar. Fue una forma de organización cívica donde ciudadanía, religión, guerra, teatro y debate público formaban parte de un mismo sistema.</p></article>
-      <article class="card"><b>La memoria</b><h3>Un símbolo universal</h3><p>La ciudad clásica se convirtió en referencia de democracia, filosofía, historia, arquitectura y tragedia, aunque su realidad social fuese mucho más compleja que el mito posterior.</p></article>
+      <article class="card"><b>La memoria</b><h3>Un símbolo universal</h3><p>La ciudad clásica se convirtió en referencia de democracia, filosofía, historia, arquitectura y tragedia, aunque su realidad social fuese mucho más compleja que el mito posterior.</p><p><a href="guia-compras.html#atenas">Qué comprar en Atenas →</a></p></article>
     </div>
   </div></section>
 
@@ -84,16 +85,24 @@
     <div class="kicker">Arquitectura de la obra</div><h2>El viaje que iremos construyendo</h2>
     <p class="lead">Cada etapa incorporará fotografías propias, contexto histórico, mapas, cronologías, personajes, arquitectura, mitología y una lectura crítica de lo observado.</p>
     <div class="route">
-      <article class="stop"><span>01</span><div><h3>Atenas</h3><p>La polis, la Acrópolis, el Ágora y sus museos.</p></div></article>
-      <article class="stop"><span>02</span><div><h3>Mykonos</h3><p>El Egeo, las Cícladas y la proximidad de Delos.</p></div></article>
-      <article class="stop"><span>03</span><div><h3>Éfeso</h3><p>Una gran ciudad jónica, helenística y romana.</p></div></article>
-      <article class="stop"><span>04</span><div><h3>Patmos</h3><p>Paisaje insular, cristianismo y Apocalipsis.</p></div></article>
-      <article class="stop"><span>05</span><div><h3>Rodas</h3><p>Helenismo, rutas marítimas y caballeros.</p></div></article>
-      <article class="stop"><span>06</span><div><h3>Creta</h3><p>La civilización minoica y el palacio de Cnosos.</p></div></article>
-      <article class="stop"><span>07</span><div><h3>Santorini</h3><p>Volcán, Akrotiri y transformación del Egeo.</p></div></article>
+      <article class="stop"><span>01</span><div><h3>Atenas</h3><p>La polis, la Acrópolis, el Ágora y sus museos.</p><a href="guia-compras.html#atenas">Compras</a></div></article>
+      <article class="stop"><span>02</span><div><h3>Mykonos</h3><p>El Egeo, las Cícladas y la proximidad de Delos.</p><a href="guia-compras.html#mykonos">Compras</a></div></article>
+      <article class="stop"><span>03</span><div><h3>Éfeso</h3><p>Una gran ciudad jónica, helenística y romana.</p><a href="guia-compras.html#efeso">Compras</a></div></article>
+      <article class="stop"><span>04</span><div><h3>Patmos</h3><p>Paisaje insular, cristianismo y Apocalipsis.</p><a href="guia-compras.html#patmos">Compras</a></div></article>
+      <article class="stop"><span>05</span><div><h3>Rodas</h3><p>Helenismo, rutas marítimas y caballeros.</p><a href="guia-compras.html#rodas">Compras</a></div></article>
+      <article class="stop"><span>06</span><div><h3>Creta</h3><p>La civilización minoica y el palacio de Cnosos.</p><a href="guia-compras.html#creta">Compras</a></div></article>
+      <article class="stop"><span>07</span><div><h3>Santorini</h3><p>Volcán, Akrotiri y transformación del Egeo.</p><a href="guia-compras.html#santorini">Compras</a></div></article>
       <article class="stop"><span>∞</span><div><h3>Memoria</h3><p>El regreso: relacionar lugares, relatos y fotografías.</p></div></article>
     </div>
   </section>
+
+  <section class="shopping" id="compras"><div class="section">
+    <div class="kicker">Información práctica integrada</div>
+    <div class="shopping-box">
+      <div><h2>Qué comprar en cada etapa</h2><p class="lead">Artesanía, gastronomía y recuerdos seleccionados por destino, con precios orientativos, criterios de autenticidad y advertencias para evitar compras impersonales.</p></div>
+      <a class="button" href="guia-compras.html">Abrir capítulo de compras</a>
+    </div>
+  </div></section>
 </main>
 <footer>TRAS LAS HUELLAS DEL MUNDO GRIEGO · GRECIA 2026<br><span class="status">Edición viva · primera publicación</span></footer>
 </body>
