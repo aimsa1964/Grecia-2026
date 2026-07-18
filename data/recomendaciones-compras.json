@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "fuente": "Guía de compras para tu viaje por Grecia",
+  "itinerario": ["Atenas", "Mykonos", "Kusadasi / Éfeso", "Patmos", "Rodas", "Heraklion / Creta", "Santorini"],
+  "seleccion_final": [
+    "Búho de Atenea o joya de plata en Atenas",
+    "Aceite de oliva virgen extra premium de Creta",
+    "Vino Assyrtiko o Vinsanto de Santorini"
+  ],
+  "destinos": [
+    {
+      "destino": "Atenas",
+      "prioridad": "alta",
+      "recomendado": ["Joya artesanal de plata", "Réplica oficial del Museo de la Acrópolis", "Sandalias de cuero", "Pieza de madera de olivo"],
+      "zonas": ["Plaka", "Monastiraki", "Tienda del Museo de la Acrópolis"],
+      "presupuesto": {"sandalias": "40–90 €", "joyeria": "80–250 €", "replicas_oficiales": "100–300 €"}
+    },
+    {
+      "destino": "Mykonos",
+      "prioridad": "selectiva",
+      "recomendado": ["Cerámica artesanal", "Ropa o accesorios de lino", "Arte local"],
+      "evitar": ["Souvenirs genéricos de puerto", "Imanes y artículos de fabricación masiva"]
+    },
+    {
+      "destino": "Kusadasi / Éfeso",
+      "prioridad": "buena_relacion_calidad_precio",
+      "recomendado": ["Cerámica turca de calidad", "Lokum", "Especias", "Té turco", "Ojo turco decorativo"],
+      "consejo": "Comparar antes de comprar en la primera tienda del puerto."
+    },
+    {
+      "destino": "Patmos",
+      "prioridad": "recuerdo_con_significado",
+      "recomendado": ["Icono ortodoxo pintado a mano", "Cruz o pieza de madera de olivo", "Miel artesanal", "Productos monásticos"]
+    },
+    {
+      "destino": "Rodas",
+      "prioridad": "decoracion",
+      "recomendado": ["Cerámica artesanal", "Producto de oliva", "Algún vino local o producto gourmet"],
+      "criterio": "Diseños sobrios, acabados cuidados y piezas fáciles de transportar."
+    },
+    {
+      "destino": "Heraklion / Creta",
+      "prioridad": "gastronomia",
+      "recomendado": ["Aceite de oliva virgen extra premium", "Miel de tomillo", "Orégano griego", "Dictamo", "Raki"],
+      "presupuesto": {"aceite_premium": "15–35 €", "miel": "8–18 €", "hierbas": "3–8 €", "raki": "10–20 €"}
+    },
+    {
+      "destino": "Santorini",
+      "prioridad": "cierre_emocional",
+      "recomendado": ["Vino Assyrtiko", "Vinsanto", "Acuarela, fotografía u obra de artista local", "Joyería de diseño"],
+      "evitar": ["Souvenirs estándar de puerto", "Productos sin origen claro", "Compras impulsivas solo por el paisaje"]
+    }
+  ],
+  "reglas_generales": [
+    "Alejarse un poco del puerto antes de comprar.",
+    "Comparar en dos o tres tiendas si la pieza es cara.",
+    "Preguntar por el origen y el material.",
+    "Priorizar artesanía y producto local.",
+    "Considerar peso y espacio para el regreso.",
+    "Guardar los recibos de piezas de valor."
+  ]
+}
