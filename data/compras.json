@@ -1,0 +1,60 @@
+{
+  "titulo": "Qué comprar durante el viaje",
+  "integracion": "Contenido transversal integrado en los capítulos de destino",
+  "destinos": [
+    {
+      "id": "atenas",
+      "nombre": "Atenas",
+      "recomendados": ["Joya artesanal de plata", "Réplica oficial del Museo de la Acrópolis", "Sandalias de cuero", "Pieza de madera de olivo"],
+      "lugares": ["Plaka", "Monastiraki", "Tienda del Museo de la Acrópolis"],
+      "precios": ["Sandalias: 40–90 €", "Joyería: 80–250 €", "Réplicas oficiales: 100–300 €"],
+      "seleccion": "Joya de plata o réplica del búho de Atenea"
+    },
+    {
+      "id": "mykonos",
+      "nombre": "Mykonos",
+      "recomendados": ["Cerámica artesanal", "Ropa o accesorios de lino", "Arte local"],
+      "evitar": ["Souvenirs genéricos de puerto", "Artículos fabricados en masa"],
+      "nota": "Comparar calidad y precio antes de comprar"
+    },
+    {
+      "id": "efeso",
+      "nombre": "Éfeso / Kuşadası",
+      "recomendados": ["Cerámica turca", "Lokum", "Especias", "Té", "Objeto decorativo pequeño"],
+      "nota": "Comparar varios establecimientos y evitar decidir en la primera tienda del puerto"
+    },
+    {
+      "id": "patmos",
+      "nombre": "Patmos",
+      "recomendados": ["Icono ortodoxo pintado a mano", "Cruz o pieza de madera de olivo", "Miel artesanal", "Productos monásticos"],
+      "seleccion": "Recuerdo cultural o espiritual de producción identificable"
+    },
+    {
+      "id": "rodas",
+      "nombre": "Rodas",
+      "recomendados": ["Cerámica artesanal", "Jabón o cosmética de olivo", "Aceite", "Vino local", "Producto gourmet"],
+      "nota": "Priorizar piezas transportables con procedencia identificable"
+    },
+    {
+      "id": "creta",
+      "nombre": "Heraklion / Creta",
+      "recomendados": ["Aceite de oliva virgen extra", "Miel de tomillo", "Orégano", "Díctamo", "Raki"],
+      "precios": ["Aceite premium: 15–35 €", "Miel: 8–18 €", "Hierbas: 3–8 €", "Raki: 10–20 €"],
+      "seleccion": "Aceite de oliva virgen extra premium"
+    },
+    {
+      "id": "santorini",
+      "nombre": "Santorini",
+      "recomendados": ["Vino Assyrtiko", "Vinsanto", "Acuarela o fotografía local", "Joyería o diseño"],
+      "evitar": ["Souvenirs estándar", "Productos sin origen claro"],
+      "seleccion": "Assyrtiko o Vinsanto"
+    }
+  ],
+  "criterios": [
+    "Autoría, procedencia o taller identificable",
+    "Materiales tradicionales y acabado cuidado",
+    "Comparar dos o tres establecimientos",
+    "Preguntar por origen y material",
+    "Considerar peso, volumen y transporte"
+  ]
+}
