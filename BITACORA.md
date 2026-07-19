@@ -83,6 +83,51 @@ El repositorio dispone de una estructura documental suficiente para continuar el
 
 ---
 
+## Versión 0.3 — Primera edición fotográfica de Atenas
+
+**Fecha:** 2026-07-19
+
+### Objetivo
+
+Convertir el capítulo de Atenas en un minisite visual operativo e integrar las primeras fotografías nocturnas del viaje.
+
+### Trabajo realizado
+
+- Se incorporó una fotografía panorámica como fondo editorial de portada.
+- Se añadió una fotografía panorámica comentada dentro del relato inicial.
+- Se creó una sección específica de fotografías con dos vistas nocturnas.
+- Se añadieron pies de foto, textos alternativos y carga diferida de imágenes.
+- Se ajustó la maquetación para móvil y escritorio.
+- Se creó una copia de trabajo del minisite en el sandbox de la sesión.
+
+### Decisiones adoptadas
+
+1. Mantener `atenas/index.html` como minisite autónomo enlazado desde la portada general.
+2. Integrar las fotografías dentro del relato y no como una galería aislada.
+3. Usar provisionalmente las rutas actuales de las imágenes en `images/` hasta consolidar su ubicación definitiva.
+4. Mantener GitHub como fuente oficial; la copia del sandbox se utilizará como entorno de trabajo auxiliar.
+
+### Problemas y resolución
+
+El entorno de sandbox no puede clonar directamente el repositorio por falta de resolución de red. Se reconstruyó localmente la estructura necesaria mediante el conector de GitHub y se mantuvieron las modificaciones sincronizadas mediante la API de contenidos.
+
+### Resultado
+
+El minisite de Atenas ya dispone de portada fotográfica, relato inicial, galería comentada y diseño adaptativo.
+
+### Commits asociados
+
+- `063f8441eea747666f13e868d00817659293523b` — integración de las fotografías nocturnas en el minisite de Atenas.
+
+### Próximos pasos
+
+1. Confirmar visualmente la correspondencia entre cada fotografía y su pie de foto.
+2. Consolidar la ruta definitiva `images/atenas/` cuando los renombrados locales se publiquen.
+3. Añadir el desarrollo histórico de la Acrópolis, el Ágora y el Museo.
+4. Reutilizar la plantilla para los siguientes destinos.
+
+---
+
 ## Plantilla para futuras entradas
 
 ```markdown
