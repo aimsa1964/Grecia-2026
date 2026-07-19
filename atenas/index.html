@@ -9,15 +9,17 @@
   <style>
     :root{--deep:#081721;--ink:#17232b;--gold:#c89a49;--paper:#fbfaf6;--muted:#68757d;--line:rgba(23,35,43,.16)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.72}
-    a{color:inherit}.hero{min-height:82svh;display:flex;align-items:end;position:relative;overflow:hidden;color:white;background:radial-gradient(circle at 78% 18%,rgba(200,154,73,.3),transparent 24%),linear-gradient(145deg,#061119,#0d3041 65%,#24637d)}
-    .hero:after{content:'ΑΘΗΝΑ';position:absolute;right:-.04em;top:.08em;font:800 clamp(6rem,28vw,22rem)/.8 Arial,sans-serif;color:rgba(255,255,255,.04);letter-spacing:-.08em}.hero-inner{position:relative;z-index:2;max-width:1120px;padding:clamp(2rem,7vw,7rem);padding-bottom:clamp(4rem,10vw,8rem)}
-    .eyebrow,.kicker{font:700 .72rem/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#dfbd7b}.hero h1{font-size:clamp(4rem,14vw,10rem);font-weight:500;line-height:.84;letter-spacing:-.06em;margin:.8rem 0 1.7rem}.hero p{max-width:720px;font-size:clamp(1.1rem,2.4vw,1.5rem);color:rgba(255,255,255,.8)}
+    a{color:inherit}.hero{min-height:88svh;display:flex;align-items:end;position:relative;overflow:hidden;color:white;background:#07131c url('../images/photo.jpeg') center/cover no-repeat}
+    .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,10,15,.92),rgba(3,10,15,.18) 65%),linear-gradient(90deg,rgba(3,10,15,.55),transparent 70%)}
+    .hero:after{content:'ΑΘΗΝΑ';position:absolute;right:-.04em;top:.08em;font:800 clamp(6rem,28vw,22rem)/.8 Arial,sans-serif;color:rgba(255,255,255,.045);letter-spacing:-.08em}.hero-inner{position:relative;z-index:2;max-width:1120px;padding:clamp(2rem,7vw,7rem);padding-bottom:clamp(4rem,10vw,8rem)}
+    .eyebrow,.kicker{font:700 .72rem/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#dfbd7b}.hero h1{font-size:clamp(4rem,14vw,10rem);font-weight:500;line-height:.84;letter-spacing:-.06em;margin:.8rem 0 1.7rem}.hero p{max-width:720px;font-size:clamp(1.1rem,2.4vw,1.5rem);color:rgba(255,255,255,.84)}
     nav{position:sticky;top:0;z-index:10;background:rgba(8,23,33,.95);backdrop-filter:blur(14px);overflow:auto;white-space:nowrap}nav div{max-width:1100px;margin:auto;display:flex;gap:1.4rem;padding:.85rem 1.2rem}nav a{text-decoration:none;color:rgba(255,255,255,.75);font:700 .7rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em}
     .section{max-width:1050px;margin:auto;padding:clamp(4rem,9vw,8rem) clamp(1.25rem,5vw,4rem)}h2{font-size:clamp(2.6rem,7vw,6rem);line-height:.96;letter-spacing:-.045em;font-weight:500;margin:.8rem 0 2rem}.lead{font-size:clamp(1.2rem,2.5vw,1.72rem);line-height:1.55}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,6vw,6rem)}.aside{border-left:2px solid var(--gold);padding-left:1.5rem;color:var(--muted)}
+    .photo-wide{margin:3.5rem 0 0}.photo-wide img,.gallery img{display:block;width:100%;height:auto}.photo-wide img{aspect-ratio:16/9;object-fit:cover}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3.5rem}.gallery figure,.photo-wide{margin-left:0;margin-right:0}.gallery figure{margin:0;background:white;border:1px solid var(--line)}.gallery img{aspect-ratio:4/3;object-fit:cover}.gallery figcaption,.photo-wide figcaption{padding:.85rem 1rem;color:var(--muted);font:500 .82rem/1.45 Arial,sans-serif}.photo-wide figcaption{padding-left:0;padding-right:0}
     .chapter-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:3rem}.chapter{background:white;padding:2rem;min-height:220px}.chapter span{font:700 .68rem/1 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}.chapter h3{font-size:1.65rem;line-height:1.1;margin:1rem 0}.chapter p{color:var(--muted);margin:0}.quote{font-size:clamp(1.7rem,4vw,3.4rem);line-height:1.25;font-style:italic;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(2rem,6vw,5rem);margin:0}
     .dark{background:var(--deep);color:white}.dark p{color:rgba(255,255,255,.72)}.back{display:inline-block;margin-top:2.5rem;font:700 .72rem/1 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#dfbd7b;text-decoration:none}
     footer{background:#050d12;color:rgba(255,255,255,.55);padding:3rem 1.2rem;text-align:center;font:500 .75rem/1.7 Arial,sans-serif}
-    @media(max-width:760px){.grid,.chapter-grid{grid-template-columns:1fr}.hero-inner,.section{padding-left:1.25rem;padding-right:1.25rem}}
+    @media(max-width:760px){.grid,.chapter-grid,.gallery{grid-template-columns:1fr}.hero-inner,.section{padding-left:1.25rem;padding-right:1.25rem}.hero{min-height:78svh;background-position:center}}
   </style>
 </head>
 <body>
@@ -28,7 +30,7 @@
     <p>Una primera lectura de Atenas desde el paisaje: la cuenca, sus colinas, la Acrópolis y la ciudad moderna extendida bajo el cielo del Ática.</p>
   </div>
 </header>
-<nav><div><a href="../index.html">Portada</a><a href="#mirada">La mirada</a><a href="#paisaje">Paisaje</a><a href="#estructura">Estructura</a><a href="#continuara">Continuará</a></div></nav>
+<nav><div><a href="../index.html">Portada</a><a href="#mirada">La mirada</a><a href="#fotografias">Fotografías</a><a href="#paisaje">Paisaje</a><a href="#estructura">Estructura</a></div></nav>
 <main>
   <section class="section" id="mirada">
     <div class="kicker">18 de julio de 2026 · Candia Hotel</div>
@@ -37,8 +39,17 @@
       <div><p class="lead">Desde el hotel, Atenas se presenta como una vasta extensión mineral y luminosa. No es una ciudad que se entregue de inmediato: primero se reconoce por sus elevaciones, después por sus monumentos y solo más tarde por la complejidad de su historia.</p><p>La Acrópolis concentra la mirada, pero el paisaje completo explica mejor la ciudad. El Licabeto, las montañas del Ática y la llanura urbanizada convierten el horizonte en una introducción geográfica a la historia ateniense.</p></div>
       <aside class="aside"><strong>Clave de lectura.</strong><br>Antes de estudiar templos, fechas y personajes, conviene entender el terreno. Atenas nació condicionada por su cuenca, sus colinas y su proximidad al mar.</aside>
     </div>
+    <figure class="photo-wide"><img src="../images/photo.jpeg" alt="Panorámica nocturna de Atenas desde el Candia Hotel" loading="eager"><figcaption>Panorámica nocturna de Atenas desde el Candia Hotel. La ciudad moderna ocupa la cuenca mientras las elevaciones históricas siguen organizando el horizonte.</figcaption></figure>
   </section>
   <blockquote class="quote">La historia de Atenas no se contempla únicamente en sus ruinas: también se lee en la forma de su horizonte.</blockquote>
+  <section class="section" id="fotografias">
+    <div class="kicker">Cuaderno visual · Primera noche</div><h2>Dos hitos sobre la ciudad</h2>
+    <p class="lead">La primera serie fotográfica del viaje no busca documentar monumentos de cerca, sino fijar la posición que ocupan en el paisaje ateniense. La distancia revela su función: ordenar visualmente una metrópoli inmensa.</p>
+    <div class="gallery">
+      <figure><img src="../images/IMG_5679.jpeg" alt="Vista nocturna de la Acrópolis de Atenas" loading="lazy"><figcaption>La Acrópolis iluminada emerge sobre el tejido urbano. Incluso desde lejos conserva su condición de centro simbólico de Atenas.</figcaption></figure>
+      <figure><img src="../images/IMG_5680.jpeg" alt="Vista nocturna de Atenas y la colina del Licabeto" loading="lazy"><figcaption>La colina del Licabeto actúa como contrapunto geográfico de la Acrópolis y ayuda a comprender la topografía interior de la ciudad.</figcaption></figure>
+    </div>
+  </section>
   <section class="dark" id="paisaje"><div class="section">
     <div class="kicker">Geografía histórica</div><h2>Una ciudad contenida por montañas</h2>
     <p class="lead">La llanura ateniense está rodeada por el Himeto, el Pentélico, el Parnés y el Egaleo. Esta geografía protegió, limitó y orientó el crecimiento urbano. En su interior, colinas como la Acrópolis, el Areópago, la Pnyx y el Licabeto actuaron como referencias religiosas, políticas, defensivas y visuales.</p>
@@ -52,12 +63,8 @@
       <article class="chapter"><span>03</span><h3>Ágora y democracia</h3><p>El espacio cívico, las instituciones, la vida cotidiana y las contradicciones de la democracia ateniense.</p></article>
       <article class="chapter"><span>04</span><h3>El museo y la memoria</h3><p>Escultura, policromía, restauración, expolio y reconstrucción contemporánea del mundo clásico.</p></article>
     </div>
-  </section>
-  <section class="dark" id="continuara"><div class="section">
-    <div class="kicker">Edición viva</div><h2>El capítulo crecerá durante el viaje</h2>
-    <p class="lead">Cada nueva fotografía y cada visita incorporarán una capa adicional: comentario visual, contexto histórico, cronologías, personajes, arquitectura, mitología y bibliografía.</p>
     <a class="back" href="../index.html">← Volver a la portada</a>
-  </div></section>
+  </section>
 </main>
 <footer>Tras las huellas del mundo griego · Grecia 2026<br>Edición digital en construcción</footer>
 </body>
