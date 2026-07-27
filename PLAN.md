@@ -2,9 +2,9 @@
 
 ## Estado general
 
-**Versión documental vigente:** 0.3  
-**Avance global estimado:** 24 %  
-**Estado:** infraestructura documental completada; guía de compras integrada en el proyecto; recursos multimedia y primer capítulo editorial pendientes.
+**Versión documental vigente:** 0.4  
+**Avance global estimado:** 33 %  
+**Estado:** infraestructura documental completada; guía de compras integrada; medioteca del viaje inventariada (269 fotografías con metadatos) y mapa de la ruta publicado; capítulos editoriales pendientes.
 
 ## Bloques de trabajo
 
@@ -20,6 +20,10 @@
 | B08 | Desarrollar capítulo Atenas | Pendiente | 0 % |
 | B09 | Completar navegación | Pendiente | 0 % |
 | B10 | Consolidar microsite editorial | Pendiente | 0 % |
+| B11 | Medioteca: inventario y metadatos del viaje | Cerrado | 100 % |
+| B12 | Mapa interactivo de la ruta | Cerrado | 100 % |
+| B13 | Capítulo del Peloponeso (Corinto, Epidauro, Micenas) | Pendiente | 0 % |
+| B14 | Literatura de los 19 puntos del mapa | En curso | 10 % |
 
 ## Bloque documental cerrado
 

@@ -128,6 +128,70 @@ El minisite de Atenas ya dispone de portada fotográfica, relato inicial, galer�
 
 ---
 
+## Versión 0.4 — El mapa de la ruta, derivado del GPS de las fotografías
+
+**Fecha:** 2026-07-27
+
+### Objetivo
+
+Dar al lector una puerta de entrada geográfica a la obra y, de paso, saber con certeza dónde
+estuvimos: hasta ahora el itinerario era el previsto, no el recorrido.
+
+### Trabajo realizado
+
+- Se montó un taller local, fuera de este repositorio, con acceso de solo lectura a la carpeta
+  de Drive del viaje mediante una cuenta de servicio.
+- Se inventariaron los 274 ficheros: 269 imágenes, 560 MB, ninguna en vídeo.
+- Se extrajo el metadato EXIF: **238 de 269 fotografías con fecha (88 %) y 232 con
+  geolocalización (86 %)**. Dos cámaras, iPhone 14 Pro Max y 17 Pro Max.
+- Agrupando las coordenadas a 250 m salen **19 puntos** con fotografías propias.
+- Se publica `mapa/index.html`, con la costa real del Egeo y la ruta cronológica.
+
+### Decisiones adoptadas
+
+1. **El itinerario se deriva del dato, no de la previsión.** El orden de las paradas sale del
+   primer instante EXIF de cada punto.
+2. **El mapa no usa teselas ni librerías externas.** La costa es Natural Earth 10 m (dominio
+   público), recortada al Egeo y simplificada a 90 m: 75 KB incrustados. La página entera pesa
+   65 KB y no hace una sola petición a terceros.
+3. **Sin línea de costa inventada.** Se descartó dibujar el litoral a mano: se usa una fuente
+   cartográfica verificable y se atribuye en el pie, como pide `ESTILO.md` §9.
+4. **Los puntos sin confirmar se marcan como tales** y el mapa lo advierte al lector.
+5. **El material pesado no entra en el repositorio.** Drive es el archivo; aquí solo llegan
+   derivados y datos.
+
+### Hallazgos que afectan al contenido
+
+- **El 24 de julio no figuraba en el itinerario.** Hubo excursión al Peloponeso: Canal de
+  Corinto, Epidauro y Micenas, con 55 fotografías. Es el segundo día más fotografiado del
+  viaje y no tiene capítulo.
+- **El 25 de julio, 41 fotografías en el Museo Arqueológico Nacional**, el punto con más
+  material de todo el viaje.
+- **El 22 de julio no tiene ninguna fotografía geolocalizada.** Es el día de Rodas. Las 31
+  imágenes sin EXIF son la primera hipótesis de dónde están.
+- **Micenas queda confirmada** por coordenadas: 37.73087, 22.75469 es el recinto arqueológico.
+
+### Alternativas descartadas
+
+- **Leaflet con teselas de OpenStreetMap**: da terreno real y zoom, pero introduce peticiones
+  externas en cada carga y una estética de mapa de navegador que desentona con una obra
+  editorial.
+- **Diagrama sin costa**: honesto pero pobre; se resolvió mejor incrustando cartografía real.
+
+### Resultado
+
+La obra tiene una puerta de entrada geográfica, y el itinerario real del viaje está
+documentado con precisión de metros.
+
+### Próximos pasos
+
+1. Escribir la literatura de los 17 puntos que aún no la tienen.
+2. Confirmar los 14 puntos identificados solo por coordenada.
+3. Resolver el hueco del 22 de julio (Rodas).
+4. Abrir el capítulo del Peloponeso.
+
+---
+
 ## Plantilla para futuras entradas
 
 ```markdown
